@@ -1,0 +1,222 @@
+*{
+    font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
+}
+h3{
+    font-size:40px;
+    font-weight:900;
+    text-decoration:none;
+    text-align:left;
+}
+img{
+    margin-left:40%;
+    user-select:none;
+}
+#searchbutton{
+    display: inline-block;
+    color:#540D6E;
+    width:9%;
+    background-color:#FFE387;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border: 1px solid rgba(0,0,0,0.3);
+    border-bottom-width: 5px;
+    font-size:30px;
+    letter-spacing:2px;
+    font-weight:600;
+    margin-left:1%;
+    height:70px;
+    transition: ease-in 0.2s;
+}
+#searchbutton:active{
+    transform: translateY(5px);
+    border-bottom-width:0;
+}
+#searchbutton:hover{
+    background-color:#FFD23F;
+    transition:ease-out 0.2s;
+}
+button{
+    display: inline-block;
+    background-color: #eee;
+    text-transform: uppercase;
+    padding: 5px 20px;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border: 1px solid rgba(0,0,0,0.3);
+    border-bottom-width: 5px;
+    font-size:28px;
+    letter-spacing:2px;
+    font-weight:300;
+    margin-bottom:5px;
+    transition: ease-in 0.2s;
+    }
+button:active{
+    transform: translateY(5px);
+    border-bottom-width:0;
+}
+button:nth-child(odd){
+    background-color:#EF8399;
+    color:white;
+}
+button:nth-child(even){
+    background-color:#FFE387;
+    color:#540D6E;
+}
+button:hover {
+    background-color: #e3e3e3;
+    border-color: rgba(0,0,0,0.5);
+    transition: ease-out 0.2s;
+}
+button:nth-child(odd):hover{
+    background-color:#EE4266;
+}
+
+button:nth-child(even):hover{
+    background-color:#FFD23F;
+}
+
+#filters{
+    width:18%;
+    float:left;
+    height:700px;
+    margin-left:2%;
+}
+h3{
+    letter-spacing:1px;
+    margin-left:5px;
+    font-weight:600;
+    font-size:26px;
+    margin-top:10px;
+    margin-bottom:0;
+    user-select: none;
+}
+h1{
+    text-align:center;
+    letter-spacing:3px;
+    font-weight:300;
+    margin-bottom:0;
+    user-select: none;
+    font-size:40px;
+}
+label{
+    user-select: none;
+    font-size:22px;
+    margin:6px;
+}
+.checkbox{
+    padding:3px;
+}
+.filterbuttons{
+    width:100%;
+    height:10%;
+    font-size:34px;
+    text-align:center;
+    user-select:none;
+    letter-spacing:2px;
+}
+.filterbuttons:active{
+    background-color:background-color:rgba(229,229,229,1);
+}
+
+p{
+    width:100%;
+    text-align:center;
+    background-color:rgba(245,245,245,0.6);
+    padding-top:10px;
+    padding-bottom:10px;
+    margin:0;
+    transition:ease 0.2s;
+}
+p:hover{
+    background-color:rgba(229,229,229,1);
+    cursor:pointer;
+}
+.details{
+    display:none;
+    font-size:26px;
+    margin:3px auto;
+}
+#myList{
+    width:75%;
+    float:right;
+    margin:0;
+}
+#sb{
+    display:block;
+    margin-bottom:5px;
+    position: relative;
+    margin: 0 auto;
+    width: 90%;
+    font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
+    font-size: 27px;
+    color: #EE4266;
+    height: 70px;
+    padding: 0 12px 0 25px;
+    background: white url("search.png") 8px 30px no-repeat;
+    border:2px solid #FFD23F;
+    border-radius: 13px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    float:left;
+    outline:none;
+    color:#540D6E;
+    user-select:none;
+}
+#sb:focus{
+    border:2px solid #EE4266;
+}
+
+a{
+    font-weight:400;
+    font-size:26px;
+    color:#884EA0;
+}
+#total{
+    margin-right:2%;
+}
+button.section, .panel{
+    float:right;
+}
+/* Style the buttons that are used to open and close the accordion panel */
+button.section {
+    background-color:#FFD23F;
+    color: #EE4266;
+    cursor: pointer;
+    padding: 18px;
+    width: 75%;
+    text-align: left;
+    border: 3px solid #ffffff;
+    margin-top: -3px;
+    outline: none;
+    transition: 0.3s;
+    text-align:center;
+    font-weight:900;
+    border-bottom:5px solid rgba(0,0,0,0.2);
+}
+button.section:active{
+    transform: translateY(5px);
+    border-bottom-width:0;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+button.section.active, button.section:hover{
+    background-color: #EE4266;
+    transition:0.3s ease;
+    color:#F3FCF0;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+div.panel {
+    display: none;
+    letter-spacing:1px;
+    font-weight:300;
+    max-height:auto;
+    overflow:hidden;
+    width:75%;
+}
