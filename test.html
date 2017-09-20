@@ -1,0 +1,112 @@
+<head>
+<link href="css\search2.css" rel = "stylesheet">
+<style>
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+</style>
+</head>
+<form class="search" method="post">
+			<input type="text" name="ingredients" id = "sb" value = "" style = "text-transform:lowercase;"/>
+			<button id = "searchbutton" name="submit" type="submit" onclick = "saveString();">Search</button>
+			<ul id = "myList" style = "list-style:none;float:center;">
+			</ul>
+				<div id = "culture" class = "col-2">
+					<a class="filterbuttons"><p>Culture</p></a>
+					<div class="details">
+					    <div class = "checkbox"><label><input type = "checkbox" name = "culture[]" value ="africancuisine"/>African Cuisine</label></div>
+					    <div class = "checkbox"><label><input type = "checkbox" name = "culture[]" value ="europeancuisine"/>European Cuisine</label></div>
+					    <div class = "checkbox"><label><input type = "checkbox" name = "culture[]" value ="northamericancuisine"/>North American Cuisine</label></div>
+					    <div class = "checkbox"><label><input type = "checkbox" name = "culture[]" value ="oceaniancuisine"/>Oceanian Cuisine</label></div>
+					    <div class = "checkbox"><label><input type = "checkbox" name = "culture[]" value ="orientalcuisine"/>Oriental Cuisine</label></div>
+					    <div class = "checkbox"><label><input type = "checkbox" name = "culture[]" value ="orientalcuisine"/>South American Cuisine</label></div>
+					</div>
+				</div>
+				<div id = "diet"  class = "col-2">
+					<a class="filterbuttons"><p>Diet</p></a>
+					<div class = "details">
+						<div class = "checkbox"><label><input type = "checkbox" name = "diet[]" value ="Balanced Diet"/>Balanced Diet</label></div>
+						<div class = "checkbox"><label><input type = "checkbox" name = "diet[]" value ="Vegetarian"/>Vegetarian</label></div>
+						<div class = "checkbox"><label><input type = "checkbox" name = "diet[]" value ="Vegan"/>Vegan</label></div>
+					</div>
+				</div>
+				<div id = "et"  class = "col-2">
+					<a class="filterbuttons"><p>Estimated Time</p></a>
+					<div class = "details">
+						<div class = "checkbox"><label><input type = "checkbox" name = "et[]" value ="Less than 10 Min "/>Less than 10 Min</label></div>
+						<div class = "checkbox"><label><input type = "checkbox" name = "et[]" value ="10 Min to 30 Min"/>10 Min to 30 Min</label></div>
+						<div class = "checkbox"><label><input type = "checkbox" name = "et[]" value ="Around 30 Min to 1 Hour"/>Around 30 Min to 1 Hour</label></div>
+						<div class = "checkbox"><label><input type = "checkbox" name = "et[]" value ="More than 1 Hour"/>More than 1 Hour</label></div>
+					</div>
+				</div>
+				<div id = total class = col-8>
+					<button class="section" type = button>Meats</button>
+					<div class="panel">
+						<button class = "ing" type = button onclick="addArray(this);newElement(this);" value = "Eggs">Eggs</button>
+						<button class = "ing" type = button onclick="addArray(this);newElement(this);" value = "Ribs">Ribs</button>
+						<button class = "ing" type = button onclick="addArray(this);newElement(this);" value="Bacon">Bacon</button>
+						<button class = "ing" type = button onclick="addArray(this);newElement(this);" value="Beef steak">Beef steak</button>
+						<button class = "ing" type = button onclick="addArray(this);newElement(this);" value="Chicken breast">Chicken breast</button>
+						<button class = "ing" type = button onclick="addArray(this);newElement(this);" value="Chicken wing">Chicken wing</button>
+						<button class = "ing" type = button onclick="addArray(this);newElement(this);" value="Ground beef">Ground beef</button>
+						<button class = "ing" type = button onclick="addArray(this);newElement(this);" value="Lamb">Lamb</button>
+						<button class = "ing" type = button onclick="addArray(this);newElement(this);" value="Pork rib">Pork rib</button>
+						<button class = "ing" type = button onclick="addArray(this);newElement(this);" value="Sausage">Sausage</button>
+					</div>
+					<button class="section" type = button>Vegetables</button>
+					<div class="panel">	
+					  	<button class = "ing" type = button onclick="addArray(this);newElement(this);" value="Argula" >Arugula</button>					  	
+						<button class = "ing" type = button onclick="addArray(this);newElement(this);" value="Broccoli" >Broccoli</button>
+						<button class = "ing" type = button onclick="addArray(this);newElement(this);" value="Brussels Sprouts" >Brussels Sprouts</button>
+						<button class = "ing" type = button onclick="addArray(this);newElement(this);" value="Cabbage" >Cabbage</button>
+						<button class = "ing" type = button onclick="addArray(this);newElement(this);" value="Celery" >Celery</button>
+						<button class = "ing" type = button onclick="addArray(this);newElement(this);" value="Carrots" >Carrots</button>			
+						<button class = "ing" type = button onclick="addArray(this);newElement(this);" value="Kale" >Kale</button>
+					</div>
+					<button class="section" type = button>Fruits</button>
+					<div class="panel">				
+					  	<button class = "ing" type = button onclick="addArray(this);newElement(this);" value="Apple">Apple</button>
+						<button class = "ing" type = button onclick="addArray(this);newElement(this);" value="Avocado">Avocado</button>					
+						<button class = "ing" type = button onclick="addArray(this);newElement(this);" value="Blueberries">Blueberries</button>			
+						<button class = "ing" type = button onclick="addArray(this);newElement(this);" value="Cantaloupe">Cantaloupe</button>
+						<button class = "ing" type = button onclick="addArray(this);newElement(this);" value="Forestberries">Forestberries</button>
+						<button class = "ing" type = button onclick="addArray(this);newElement(this);" value="Grapefruit">Grapefruit</button>						
+						<button class = "ing" type = button onclick="addArray(this);newElement(this);" value="Kiwi">Kiwi</button>
+						<button class = "ing" type = button onclick="addArray(this);newElement(this);" value="Lime">Lime</button>
+					</div>
+					<button class="section" type = button>Seafoods</button>
+					<div class="panel">
+					 	<button class = "ing" type = button onclick="addArray(this);newElement(this);" value="Anchovy">Anchovy</button>
+						<button class = "ing" type = button onclick="addArray(this);newElement(this);" value="Bass">Bass</button>
+						<button class = "ing" type = button onclick="addArray(this);newElement(this);" value="Cod">Cod</button>		
+						<button class = "ing" type = button onclick="addArray(this);newElement(this);" value="Kingfish">Kingfish</button>
+						<button class = "ing" type = button onclick="addArray(this);newElement(this);" value="Lobster">Lobster</button>
+						<button class = "ing" type = button onclick="addArray(this);newElement(this);" value="Salmon">Salmon</button>
+					</div>
+					<button class="section" type = button>Dairy</button>
+					<div class="panel">						
+						<button class = "ing" type = button onclick="addArray(this);newElement(this);" value="Butter">Butter</button>
+						<button class = "ing" type = button onclick="addArray(this);newElement(this);" value="Cheese">Cheese</button>
+						<button class = "ing" type = button onclick="addArray(this);newElement(this);" value="Cream">Cream</button>	
+					  	<button class = "ing" type = button onclick="addArray(this);newElement(this);" value="Milk">Milk</button>				  	
+					</div>
+					<button class="section" type = button>Seasonings</button>
+					<div class="panel"> 						
+					  	<button class = "ing" type = button onclick="addArray(this);newElement(this);" value="Salt">Salt</button>					  	
+						<button class = "ing" type = button onclick="addArray(this);newElement(this);" value="Black pepper">Black pepper</button>
+						<button class = "ing" type = button onclick="addArray(this);newElement(this);" value="Boia">Boia</button>					
+						<button class = "ing" type = button onclick="addArray(this);newElement(this);" value="Cinammon">Cinammon</button>
+						<button class = "ing" type = button onclick="addArray(this);newElement(this);" value="Garlic">Garlic powder</button>
+						<button class = "ing" type = button onclick="addArray(this);newElement(this);" value="Parsley">Parsley</button>
+					</div>
+				</div>
+		</form>

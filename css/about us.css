@@ -1,0 +1,74 @@
+#aboutus{
+	height:100vh;
+	border:2px dashed black;
+	background:url(images/3.jpeg) no-repeat;
+	background-size:cover;
+}
+#article h3 {
+	display: block;
+	margin: 10px auto;
+	text-align:center;
+	width: 50vw;
+	border-bottom: 2px solid #239B56;
+	padding: 10vh 0 10px 0;
+	color:#000000;
+	font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
+	font-size:3.5vw;
+	font-weight:600;
+}
+#article p{
+	line-height:50px;
+	margin:0 auto;
+	border:2px solid black;
+	background-color:rgba(255,255, 255, 0.8);
+}
+#article {
+	font-size:1.2vw;
+	text-align:center;
+	height:35vh;
+	font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
+}
+#img-container {
+	padding-top:5vh;
+    border-radius: 8px;
+    list-style:none;
+    margin-top:20vh;
+    border:2px solid black;
+}
+#img-container ul{
+	margin:2vh auto;
+	text-align:center;
+}
+#img-container li{
+	margin:0 0.3vw;
+	height:35vh;
+	width:15%;
+	display:inline-block;
+	transition:all 0.3s;
+}
+#img-container li:hover{
+	-moz-transform: scale(1.1);
+	-webkit-transform: scale(1.1);
+	transform: scale(1.1);
+	z-index:1;
+	cursor:pointer;
+}
+li>img {
+    border-radius: 8px 8px 8px 8px;
+    height:25vh;
+    width:auto;
+    margin:0 auto;
+}
+
+img>label{
+	margin:1vh auto;
+	font-size:1vw;
+	line-height:0;
+}
+h5{
+	margin-bottom:0;
+	margin-top:0.5vh;
+	font-size:1.3vw;
+	font-weight:500;
+	letter-spacing:2px;
+}

@@ -1,0 +1,52 @@
+#button6{
+  background-color: #52BE80;
+    border: none;
+    border-radius:8px;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    display: inline-block;
+    font-size: 1.3vw;
+    font-weight:300;
+    cursor: pointer;
+    margin:5px;
+  font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition:all 0.3s;
+  height:50px;
+  margin:10px 20px 20px 10px;
+  -webkit-user-select: none; /* Chrome/Safari */        
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none;
+  outline:0;
+}
+#button6:hover{
+  background-color:#186A3B;
+}
+
+
+#button6 span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.3s;
+}
+
+#button6 span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.2s;
+}
+
+#button6:hover span {
+  padding-right: 25px;
+}
+
+#button6:hover span:after {
+  opacity: 1;
+  right: 0;
+}

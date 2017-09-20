@@ -1,0 +1,66 @@
+*{
+	font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
+}
+#results{
+	margin:2vh auto;
+}
+.container{
+	width:20vw;
+	text-align:center;
+	display:inline-block;
+	border:2px solid black;
+	height:auto;
+	margin:10vh 1vw;
+    transition: all 200ms ease-in;
+    transform: scale(1);  
+}
+.container:hover{
+    z-index: 1;
+    transition: all 200ms ease-in;
+    transform: scale(1.05);
+}
+.container:hover label{
+	color:white;
+}
+.container:nth-child(odd){
+	background-color:rgba(82,190,128,0.8);
+	transition:0.3s ease;
+}
+.container:nth-child(odd):hover{
+	background-color:rgba(24,106,59,0.8);
+}
+.container:nth-child(even){
+	background-color:rgba(46, 204, 113,0.8);
+	transition:0.3s ease;
+}
+.container:nth-child(even):hover{
+	background-color:rgba(39, 174, 96,0.8);
+}
+.container img{
+	width:20vw;
+	height:30vh;
+	margin:0 auto;
+}
+label{
+	font-size:23px;
+	list-style:none;
+	display:block;
+	text-align:left;
+	margin:0 auto;
+	color:black;
+	transition: all 200ms ease-in;
+    transform: scale(1); 
+}
+#text-container{
+	width:100%;
+	border:1px solid black;
+	margin:0 auto;
+}
+a:active{
+	color:black;
+}
+#footer{
+	bottom:0;
+	position:absolute;
+	z-index:-1;
+}

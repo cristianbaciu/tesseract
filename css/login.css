@@ -1,0 +1,74 @@
+*{
+  font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
+}
+label{
+  font-size:18px;
+  margin: 0 0 30px 0;
+
+}
+h2{
+	  text-align:center;
+	  font-size:30px;
+    font-weight:300;
+}
+
+input[type=text], input[type=password] {
+  background: rgba(255,255,255,0.1);
+  border: 1px solid white;
+  font-size: 16px;
+  height: auto;
+  margin: 0;
+  outline: 0;
+  padding: 15px;
+  width: 100%;
+  background-color: #e8eeef;
+  color: #000000;
+  box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+  margin-bottom: 10px;
+  transition:all 0.2s ease-out;
+}
+input:focus{
+  border:1px solid #85C1E9 ;
+  top:-1;
+  bottom:-1;
+}
+.container>label:hover{
+  cursor:pointer;
+}
+#button {
+  padding: 18px 20px 18px 20px;
+  color: #FFF;
+  background-color: #4bc970;
+  font-size: 22px;
+  text-align: center;
+  font-style: normal;
+  border-radius: 5px;
+  width: 100%;
+  border: 1px solid #3ac162;
+  border-width: 1px 1px 1px 1px;
+  margin-bottom: 10px;
+  transition:all 0.4s ease-out;
+}
+
+#button:hover {
+    background-color:#239B56;
+}
+
+
+.container {
+    padding: 16px;
+}
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+
+@media screen and (max-width: 300px) {
+    span.psw {
+        display: block;
+        float: none;
+    }
+    .cancelbtn {
+        width: 100%;
+    }
+}

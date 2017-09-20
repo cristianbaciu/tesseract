@@ -1,0 +1,32 @@
+#description {
+	background:url("images/2.png") no-repeat center center;
+	background-size:contain;
+	text-align: center;
+	color:#000000;
+	height:100vh;
+	margin-top:5px;
+	border:2px dashed black;
+
+}
+#description p{
+	width:45vw;
+	margin-left:40vw;
+	line-height:4vh;
+	font-size:1.4vw;
+}
+#noti{
+	font-size:1.2vw;
+}
+
+#description h3 {
+	display: block;
+	margin: 10px auto;
+	width: 50vw;
+	border-bottom: 2px solid #239B56;
+	padding: 15vh 0 10px 0;
+	color:#000000;
+	font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
+	font-size:3.5vw;
+	font-weight:600;
+	margin-left:37vw;
+}

@@ -1,0 +1,203 @@
+#searchbutton{
+    color:#F3FCF0;
+    width:18%;
+    background-color:#FFAF87;
+    text-transform: uppercase;
+    border-radius: 5px;
+    border: 1px solid rgba(0,0,0,0.3);
+    border-bottom-width: 5px;
+    font-size:2vw;
+    letter-spacing:2px;
+    font-weight:600;
+    height:8vh;
+    display:inline-block;
+    transition:0.2s ease;
+}
+#searchbutton:active{
+    transform: translateY(5px);
+    border-bottom-width:0;
+}
+#searchbutton:hover{
+    background-color:#ED6A5E;
+    transition:ease-out 0.2s;
+}
+
+#search{
+    margin:5vh auto;
+    margin-left:10%;
+    float:center;
+}
+#myList{
+    margin-top:2vh;
+}
+#sb{
+    display:inline-block;
+    margin-top:10vh;
+    width: 44%;
+    font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
+    font-size: 27px;
+    color: #000000;
+    background-color:rgba(255, 255, 255,0.6);
+    height: 8vh;
+    border:2px solid #FFAF87;
+    border-radius: 13px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    float:center;
+    outline:none;
+    color:#540D6E;
+    user-select:none;
+    transition:0.4s ease;
+}
+#sb:focus{
+    border:2px solid #ED6A5E;
+    width:74%;
+    float:center;
+    background-color:rgba(255, 255, 255,0.9);
+}
+button.section, button.ing{
+    display: inline-block;
+    background-color: #eee;
+    text-transform: uppercase;
+    padding: 5px 20px;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border: 1px solid rgba(0,0,0,0.4);
+    border-bottom-width: 5px;
+    font-size:28px;
+    letter-spacing:2px;
+    font-weight:300;
+    margin-bottom:5px;
+    transition: ease-in 0.2s;
+    }
+button.section:active,button.ing:active{
+    transform: translateY(5px);
+    border-bottom-width:0;
+}
+button.ing:nth-child(odd){
+    background-color:#FF8E72;
+    color:#F3FCF0;
+}
+button.ing:nth-child(even){
+    background-color:#76D7C4;
+    color:#F3FCF0;
+}
+button.ing:hover {
+    background-color: #e3e3e3;
+    border-color: rgba(0,0,0,0.5);
+    transition: ease-out 0.2s;
+}
+button.ing:nth-child(odd):hover{
+    background-color:#ED6A5E;
+}
+
+button.ing:nth-child(even):hover{
+    background-color:#377771;
+}
+#filter{
+    padding:0;
+    margin-left:2vw;
+    float:left;
+}
+
+label.checkbox{
+    user-select: none;
+    font-size:1vw;
+    margin:6px;
+}
+.checkbox{
+    padding:3px;
+}
+.filterbuttons{
+    height:10%;
+    font-size:2vw;
+    text-align:center;
+    user-select:none;
+    letter-spacing:2px;
+}
+.filterbuttons:active{
+    background-color:#ED6A5E;
+}
+a>p{
+    text-align:center;
+    background-color:#FFAF87;
+    padding-top:10px;
+    padding-bottom:10px;
+    margin:5px 0 5px 0;
+    transition:ease 0.2s;
+    color:#F3FCF0;
+    border-radius:5px;
+}
+a>p:hover,a>p:active{
+    background-color:#ED6A5E;
+    cursor:pointer;
+}
+a.filterbuttons{
+    font-weight:400;
+    font-size:26px;
+    color:#884EA0;
+}
+.details{
+    display:none;
+    font-size:2vw;
+    margin:3px auto;
+    background-color:rgba(118, 215, 196,0.7);
+    color:#ffffff;
+}
+#myList{
+    width:100%;
+    margin:2vh auto;
+}
+
+#total{
+    float:right;
+    margin-right:3vw;
+    margin-top:0;
+    padding:0;
+}
+button.section, .panel{
+    float:right;
+}
+/* Style the buttons that are used to open and close the accordion panel */
+button.section {
+    background-color:#76D7C4;
+    color: #ffffff;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border-radius: 10px;
+    margin-top: -3px;
+    outline: none;
+    transition: 0.3s;
+    text-align:center;
+    font-weight:900;
+    border-bottom:5px solid rgba(0,0,0,0.2);
+}
+button.section:active{
+    transform: translateY(5px);
+    border-bottom-width:0;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+button.section.active, button.section:hover{
+    background-color: #ED6A5E;
+    transition:0.3s ease;
+    color:#F3FCF0;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+div.panel {
+    display: none;
+    letter-spacing:1px;
+    font-weight:300;
+    max-height:auto;
+    overflow:hidden;
+    width:100%;
+    padding-top:1vh;
+    padding-bottom:1vh;
+    background-color:rgba(255,255,255,0.4);
+    user-select:none;
+}

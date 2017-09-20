@@ -1,0 +1,91 @@
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+*{
+	  font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
+}
+ul{
+	list-style:none;
+}
+#header ul{
+	list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color:#333;;
+    height:9vh;
+}
+#header li{
+	transition:0.3s ease;
+}
+#header li:hover{
+	cursor:pointer;
+	background-color:#111;
+}
+
+#nav{
+	float:left;
+}
+#nav li{
+	padding:2vh 2vw 2vh 2vw;
+}
+#nav a{
+	text-decoration:none;
+	color:white;
+	font-size:1.7vw;
+}
+#user{
+	float:right;
+}
+#user li{
+	float:right;
+	padding:2vh 2vw 2vh 2vw;
+}
+#user img{
+	height:4vh;
+	width:auto;
+	padding:0;
+}
+#profile{
+	height:70vh;
+	border:1px dashed black;
+}
+#main{
+	height:70vh;
+	margin:0 auto;
+	border:2px solid black;
+}
+#main h2{
+	text-align:center;
+}
+#main img{
+	margin:2vh auto;
+	display:block;
+	border:2px solid #D1F2EB;
+	border-radius:50%;
+	height:25vh;
+	width:auto;
+	transition:ease 0.4s;
+}
+#main img:hover{
+	cursor:pointer;
+	border:2px solid #48C9B0;
+	opacity:0.6	;
+}
+#footer{
+	height:20vh;
+	border:1px dashed black;
+	background-color:#2ECC71;
+}
+#credit{
+	margin:2vh auto;
+	text-align:center;
+}

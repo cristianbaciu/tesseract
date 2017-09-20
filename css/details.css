@@ -1,0 +1,88 @@
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+*{
+	font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
+}
+#index a{
+	font-size:18px;
+	text-decoration:none;
+	color:#A569BD;
+}
+#info{
+	border:2px solid black;
+	height:60vh;
+	margin:10vh auto;
+	margin-bottom:0;
+}
+#info h2{
+	margin:0;
+	font-weight:300;
+	font-size:38px;
+	letter-spacing:2px;
+}
+#info img{
+	margin-top:0;
+	width:30vw;
+	height:50vh;
+	border:2px solid black;
+	float:left;
+}
+#ing-list{
+	width:30vw;
+	height:50vh;
+	border:2px solid black;
+	float:right
+}
+#ing-list table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+#ing-list th{
+	font-weight:300;
+	font-size:26px;
+}
+#ing-list td{
+	font-size:20px;	
+}
+#ing-list td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+#ing-list tr:nth-child(even) {
+    background-color: #A9DFBF;
+}
+#steps{
+	height:100vh;
+	border:2px solid black;
+	margin:0 auto;
+}
+#steps h2{
+	font-weight:600;
+	font-size:24px;
+	letter-spacing: 2px;
+}
+.numbers{
+	background-color: #52BE80;
+	color: #fff;
+	height: 2vw;
+	width: 2vw;
+	display: inline-block;
+	font-size: 24px;
+	margin-right: 4px;
+	text-align: center;
+	text-shadow: 0 1px 0 rgba(255,255,255,0.2);
+	border-radius: 100%;
+}
